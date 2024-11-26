@@ -1,0 +1,9 @@
+<h2>{{ pokemon?.name }}</h2>
+<p>Waga: {{ pokemon?.weight }} kg</p>
+<p>Wzrost: {{ pokemon?.height }} m</p>
+<p>Umiejętności:</p>
+<ul>
+  <li *ngFor="let ability of pokemon?.abilities">
+    {{ ability.ability.name }}
+  </li>
+</ul>
